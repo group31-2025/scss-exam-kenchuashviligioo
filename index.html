@@ -1,9 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>გამოცდა SCSS</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <img class="burger" src="assets/icon-hamburger.svg" alt="burger" />
+
+        <img src="assets/logo.svg" alt="logo" />
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">HEADPHONES</a></li>
+          <li><a href="#">SPEAKERS</a></li>
+          <li><a href="#">EARPHONES</a></li>
+        </ul>
+        <img src="assets/icon-cart.svg" alt="cart-svg" />
+      </nav>
+      <h1>EARPHONES</h1>
+    </header>
+    <main>
+      <section class="product">
+        <img src="assets/image-earphones.png" alt="earphones" />
+        <div class="earphones-content">
+          <h5>NEW PRODUCT</h5>
+          <h2>YX1 WIRELESS EARPHONES</h2>
+          <p>
+            Tailor your listening experience with bespoke dynamic drivers from
+            the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound
+            even in noisy environments with its active noise cancellation
+            feature.
+          </p>
+          <button>See Product</button>
+        </div>
+      </section>
+      <section class="cards">
+        <div class="card">
+          <img
+            class="card-image"
+            src="assets/img-headphones.svg"
+            alt="img-headphones"
+          />
+          <h5>HEADPHONES</h5>
+          <a href="#"
+            >Shop <img src="assets/icon-arrow-right.svg" alt="icon-arrow-right"
+          /></a>
+        </div>
+        <div class="card">
+          <img
+            class="card-image"
+            src="assets/image-speakers.svg"
+            alt="speakers"
+          />
+          <h5>SPEAKERS</h5>
+          <a href="#"
+            >Shop <img src="assets/icon-arrow-right.svg" alt="icon-arrow-right"
+          /></a>
+        </div>
+        <div class="card">
+          <img
+            class="card-image"
+            src="assets/images-earphones.svg"
+            alt="EARPHONES"
+          />
+          <h5>EARPHONES</h5>
+          <a href="#"
+            >Shop <img src="assets/icon-arrow-right.svg" alt="icon-arrow-right"
+          /></a>
+        </div>
+      </section>
+      <section class="info">
+        <div class="audio-gear">
+          <h2>Bringing you the <span>best</span> audio gear</h2>
+          <p>
+            Located at the heart of New York City, Audiophile is the premier
+            store for high end headphones, earphones, speakers, and audio
+            accessories. We have a large showroom and luxury demonstration rooms
+            available for you to browse and experience a wide range of our
+            products. Stop by our store to meet some of the fantastic people who
+            make Audiophile the best place to buy your portable audio equipment.
+          </p>
+        </div>
+        <img
+          id="best-gear"
+          src="assets/image-best-gear.jpg"
+          alt="image-best-gear"
+        />
+      </section>
+    </main>
+    <footer>
+      <div class="fot-left">
+        <img src="assets/logo.svg" alt="logo" />
+        <p>
+          Audiophile is an all in one stop to fulfill your audio needs. We're a
+          small team of music lovers and sound specialists who are devoted to
+          helping you get the most out of personal audio. Come and visit our
+          demo facility - we’re open 7 days a week.
+        </p>
+        <p id="copyright">Copyright 2021. All Rights Reserved</p>
+      </div>
+      <div class="fot-right">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">HEADPHONES</a></li>
+          <li><a href="#">SPEAKERS</a></li>
+          <li><a href="#">EARPHONES</a></li>
+        </ul>
+        <div class="social-icons">
+          <img src="assets/icon-facebook.svg" alt="icon-facebook" />
+          <img src="assets/icon-twitter.svg" alt="icon-twitter" />
+          <img src="assets/icon-instagram.svg" alt="icon-instagram" />
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

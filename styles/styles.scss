@@ -1,0 +1,238 @@
+@import "./variables";
+@import "./reset";
+@import "./mixins";
+
+header {
+  width: 100%;
+  min-height: 100px;
+  padding: 35px 165px 160px 165px;
+  background-color: $bg-color;
+
+  @media (max-width: 700px) {
+    padding: 32px 24px;
+  }
+  nav {
+    @include flex(row, space-between, center);
+    padding-bottom: 36px;
+    border-bottom: 1px solid #fff;
+    .burger {
+      display: none;
+      @media (max-width: 700px) {
+        display: inline-block;
+      }
+    }
+
+    ul {
+      @include flex();
+      gap: 34px;
+      list-style: none;
+
+      @media (max-width: 700px) {
+        display: none;
+      }
+      li {
+        a {
+          @include paragraph();
+          text-decoration: none;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+
+  h1 {
+    @include heading(#fff);
+    text-align: center;
+    @include flex(row, center, center);
+    margin-top: 98px;
+  }
+}
+main {
+  padding: 160px 165px;
+  @media (max-width: 700px) {
+    padding: 64px 24px;
+  }
+  img {
+    @media (max-width: 700px) {
+      max-width: 100%;
+    }
+  }
+  .product {
+    @include flex(row, space-between, center);
+    gap: 125px;
+    background-color: $light-grey;
+
+    @media (max-width: 700px) {
+      @include flex(column, center, center);
+      text-align: center;
+    }
+
+    .earphones-content {
+      max-width: 445px;
+      h5 {
+        @include heading($brown, 14px, 400, 10px);
+        margin-bottom: 16px;
+
+        @media (max-width: 700px) {
+          text-align: center;
+        }
+      }
+      h2 {
+        @include heading();
+        margin-bottom: 32px;
+
+        @media (max-width: 700px) {
+          text-align: center;
+        }
+      }
+      p {
+        @include paragraph(#000, 15px, 400);
+        margin-bottom: 40px;
+
+        @media (max-width: 700px) {
+          text-align: center;
+        }
+      }
+      button {
+        @include button();
+        &:hover {
+          opacity: 0.5;
+        }
+        @media (max-width: 700px) {
+        }
+      }
+    }
+  }
+  .cards {
+    // background-color: red;
+    margin-top: 160px;
+    @include flex(row, center, center);
+    gap: 30px;
+
+    @media (max-width: 700px) {
+      @include flex(column, center, center);
+      gap: 80px;
+      width: 100%;
+      padding: 0, 24px, 0, 24px;
+    }
+    .card {
+      background-color: $grey;
+      width: 350px;
+      height: 204px;
+      border-radius: 8px;
+      @include flex(column, center, center);
+
+      @media (max-width: 700px) {
+        width: 100%;
+      }
+      img {
+        margin-top: -120px;
+      }
+      h5 {
+        @include heading(black, 18px, 700, 1.28px);
+        margin: 36px 0 15px 0;
+      }
+      a {
+        @include paragraph(#000, 13px, 700, normal);
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .info {
+    @include flex(row, center, center);
+    margin-top: 164px;
+    gap: 125px;
+
+    @media (max-width: 700px) {
+      @include flex(column-reverse, center, center);
+    }
+    .audio-gear {
+      max-width: 445px;
+
+      h2 {
+        @include heading();
+        span {
+          color: $brown;
+        }
+        margin-bottom: 32px;
+        @media (max-width: 700px) {
+          text-align: center;
+        }
+      }
+
+      p {
+        @include paragraph(#000);
+        opacity: 0.5;
+        @media (max-width: 700px) {
+          text-align: center;
+        }
+      }
+    }
+    #best-gear {
+      border-radius: 8px;
+    }
+  }
+}
+footer {
+  padding: 65px 165px 48px 165px;
+  background-color: $light-black;
+  @include flex(row, space-between, start);
+
+  @media (max-width: 700px) {
+    @include flex(column, center, center);
+  }
+
+  .fot-left {
+    p {
+      @include paragraph(#fff, 15px, 400, 25px);
+      width: 540px;
+      opacity: 0.5;
+      margin-top: 36px;
+      margin-bottom: 56px;
+
+      @media (max-width: 700px) {
+        width: 327px;
+      }
+    }
+    #copyright {
+      @include paragraph(#fff, 15px, 700, 25px);
+      width: 540px;
+      opacity: 0.5;
+    }
+
+    @media (max-width: 700px) {
+      @include flex(column, center, center);
+      text-align: center;
+      width: 100%;
+    }
+  }
+  .fot-right {
+    height: 100%;
+    @include flex(column, start, end);
+    // background-color: red;
+    gap: 105px;
+
+    ul {
+      @include flex(row, start, end);
+      gap: 34px;
+      list-style: none;
+
+      @media (max-width: 700px) {
+        display: none;
+      }
+      li {
+        a {
+          @include paragraph();
+          text-decoration: none;
+          letter-spacing: 2px;
+        }
+      }
+    }
+    .social-icons {
+      display: flex;
+      gap: 16px;
+    }
+  }
+}

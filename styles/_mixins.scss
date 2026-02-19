@@ -1,0 +1,43 @@
+@mixin heading(
+  $color: black,
+  $font-size: 40px,
+  $weight: 700px,
+  $height: 44px,
+  $spacing: 1.42px
+) {
+  color: $color;
+  font-size: $font-size;
+  font-weight: $weight;
+  line-height: $height;
+  letter-spacing: $spacing;
+  text-transform: uppercase;
+}
+@mixin flex($direction: row, $justify: start, $align: start) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin paragraph(
+  $color: #fff,
+  $font-size: 13px,
+  $weight: 700px,
+  $height: 25px
+) {
+  color: $color;
+  font-size: $font-size;
+  font-weight: $weight;
+  line-height: $height;
+}
+
+@mixin button() {
+  padding: 15px 30px;
+  background-color: $brown;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+}
